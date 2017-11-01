@@ -37,6 +37,7 @@ branches:
   only:
     - master
     - /^\d+\.\d+(\.\d+)?$/
+    - debug-release
 
 # Install various dependencies:
 before_install:
@@ -69,10 +70,11 @@ script:
   # Magic incantation to make kubectl work, because apparently gcloud can't do that correctly (see https://github.com/kubernetes/kubernetes/issues/30617)
   - export GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/gcloud-service-key.json
   # Docker not available on OS X Travis:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then TELEPRESENCE_METHOD=container ./ci/test.sh; fi
-  - env TELEPRESENCE_METHOD=inject-tcp ./ci/test.sh
-  - env TELEPRESENCE_METHOD=vpn-tcp ./ci/test.sh
+#  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then TELEPRESENCE_METHOD=container ./ci/test.sh; fi
+#  - env TELEPRESENCE_METHOD=inject-tcp ./ci/test.sh
+#  - env TELEPRESENCE_METHOD=vpn-tcp ./ci/test.sh
   - ./ci/clean-cluster.py
+  - ./ci/release.sh
 
 # If a commit is tagged, release the software:
 deploy:

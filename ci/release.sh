@@ -22,4 +22,4 @@ ssh-add packaging/homebrew.rsa
 sudo gem install package_cloud
 
 # Run the release:
-make release
+#make release
