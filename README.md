@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/datawire/telepresence.svg?branch=master)](https://travis-ci.org/datawire/telepresence)
 [![Join the chat at https://gitter.im/datawire/telepresence](https://badges.gitter.im/datawire/telepresence.svg)](https://gitter.im/datawire/telepresence?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fazatoth%2Ftelepresence.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fazatoth%2Ftelepresence?ref=badge_shield)
 
 ## Demo
 
@@ -29,3 +30,7 @@ For more about Telepresence, and the various options, [read the documentation](h
 ## About Telepresence
 
 Telepresence is an open source project by [Datawire](https://www.datawire.io), and licensed under the Apache 2.0 License.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fazatoth%2Ftelepresence.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fazatoth%2Ftelepresence?ref=badge_large)
